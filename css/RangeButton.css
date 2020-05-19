@@ -1,0 +1,74 @@
+input[type=range] {
+    width: 100%;
+}
+.customizing input[type=range] {
+    -webkit-appearance: none;
+}
+.customizing  input[type=range]:focus {
+    outline: none;
+}
+/*webkit (Chrome)의 경우*/
+.customizing input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #2497E3;
+}
+.customizing input[type=range]::-webkit-slider-thumb {
+    border: 1px solid #2497E3;
+    height: 15px;
+    width: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px; /*chrome의 경우 margin-top값을 부여해야합니다.*/
+}
+.customizing input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #2497E3; /*네모버튼에 포커스를 줬을때 뒤에 라인(ㅡ)의 효과*/
+}
+/*Firefox의 경우*/
+.customizing input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #2497E3;
+}
+.customizing input[type=range]::-moz-range-thumb {
+    border: 1px solid #2497E3;
+    height: 15px;
+    width: 10px;
+    background: #ffffff;
+    cursor: pointer;
+}
+/*IE의 경우*/
+.customizing input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+.customizing input[type=range]::-ms-fill-lower {
+    background: #2497E3;
+}
+.customizing input[type=range]::-ms-fill-upper {
+    background: #2497E3;
+}
+.customizing input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    border: 1px solid #2497E3;
+    height: 15px;
+    width: 10px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.customizing input[type=range]:focus::-ms-fill-lower {
+    background: #2497E3;/*네모버튼에 포커스를 줬을때 뒤에 라인(ㅡ)의 효과*/
+}
+.customizing input[type=range]:focus::-ms-fill-upper {
+    background: #2497E3; /*네모버튼에 포커스를 줬을때 뒤에 라인(ㅡ)의 효과*/
+}
